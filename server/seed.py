@@ -176,7 +176,7 @@ if __name__ == '__main__':
         else:
             print("No keyword given. Assuming preexisting data dump.")
 
-        # Adding attraction keys - trial
+        # Adding attraction keys
         magic_mountain = requests.get('https://api.themeparks.wiki/v1/entity/c6073ab0-83aa-4e25-8d60-12c8f25684bc/children')
         scraped = magic_mountain.json()['children']
         for attraction in attractions:
