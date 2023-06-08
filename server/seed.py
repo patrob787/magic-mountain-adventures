@@ -194,7 +194,7 @@ if __name__ == '__main__':
             attraction.longitude = ride_location['longitude']
         
        
-        # I commented out the attraction seeding code so we can re-seed users and adventures without messing up attractions table --
+        # I commented out the attraction seeding code so we can re-seed users and adventures without messing up attractions table ---
 
         # print("Seeding attractions...")
         # db.session.add_all(attractions)
