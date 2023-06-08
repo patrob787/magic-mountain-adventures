@@ -113,7 +113,7 @@ if __name__ == '__main__':
         print("Starting seed...")
 
         User.query.delete()
-        Attraction.query.delete()
+        # Attraction.query.delete()
         Adventure.query.delete()
 
         # Initial Population of Attractions (w/out descriptions & images)
@@ -193,13 +193,12 @@ if __name__ == '__main__':
             attraction.latitude = ride_location['latitude']
             attraction.longitude = ride_location['longitude']
         
-        # attractions[0].description = json.dumps({0: 'Just like the brave pirates next door on the Buccaneer, the Swashbuckler is your ticket to a daring adventure. \xa0You’ll fly boldly through the air with the trees at your feet!'})
-        # print(attractions[0].description)
-        
+       
+        # I commented out the attraction seeding code so we can re-seed users and adventures without messing up attractions table --
 
-        print("Seeding attractions...")
-        db.session.add_all(attractions)
-        db.session.commit()
+        # print("Seeding attractions...")
+        # db.session.add_all(attractions)
+        # db.session.commit()
 
         print("Seeding users...")
         users = make_users()
