@@ -51,4 +51,5 @@ jspm_packages
 .pytest_cache
 
 #Ignore Database Instance
-*/app.db
+server/instance
+server/__pycache__
