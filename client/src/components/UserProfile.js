@@ -74,6 +74,7 @@ function UserProfile() {
       </div>
       </div>
       <div className="historyContainer"> 
+
       <p className="adventureTitle" >Your Adventure History</p>
       <table className="tableContainer">
         <tr>
