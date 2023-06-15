@@ -12,7 +12,6 @@ import PlanAdventure from "./PlanAdventure";
 
 function App() {
 
-  
 return (
   <div>
   <MyProvider>
